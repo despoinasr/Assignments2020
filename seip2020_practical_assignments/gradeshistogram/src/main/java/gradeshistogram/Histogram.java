@@ -9,32 +9,36 @@
 package gradeshistogram;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Histogram {
 
 	/**
 	   * This is the main method which makes use of generateChart method.
-	   * @param args Unused.
+	   * @param args gives the file name.
 	   * @return Nothing.
-	   * @exception java.lang.ArrayIndexOutOfBoundsException or java.lang.NullPointerException on input error.
+	   * @exception java.lang.NullPointerException on input error.
 	   */
 	public static void main(String[] args) {
-		Scanner sc = null;
+		File file = new File(args[0]);   
+		Scanner scanner = null;
 		try {
-			sc = new Scanner(new File(args[0]));
-
-		} catch (Exception e) {
-			System.out.println("Something went wrong");
-			e.printStackTrace();
+			scanner = new Scanner(file);
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found");
 		}
-		int size = sc.nextInt();
-        int[] data = new int[size];
-
-       for(int i =0; i<size; i++)
-       {
-           data[i] = sc.nextInt();
-       }
+		List<Integer> data = new ArrayList<Integer>();
+		while (scanner.hasNext()) {
+		    if (scanner.hasNextInt()) {
+		        data.add(scanner.nextInt());
+		    } 
+		    else {
+		        scanner.next();
+		    }
+		}
        HistogramGenerator.generateChart(data);
 
 	}

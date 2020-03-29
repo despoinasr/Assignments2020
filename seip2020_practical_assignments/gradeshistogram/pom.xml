@@ -23,7 +23,7 @@
 	<configuration>
 		<archive>
 			<manifest>
-				<mainClass>Histogram</mainClass>
+				<mainClass>gradeshistogram.Histogram</mainClass>
 			</manifest>
 		</archive>
 		<descriptorRefs>

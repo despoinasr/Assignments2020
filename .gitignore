@@ -1,5 +1,3 @@
-/target/
-!.mvn/wrapper/maven-wrapper.jar
 
 ### Eclipse ###
 .metadata
@@ -19,6 +17,4 @@ local.properties
 # Compiled class file
 *.class
 
-# Package Files #
-*.jar
-*.zip
+
