@@ -10,7 +10,7 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
-
+seip2020_practical_assignments/gradeshistogram/target/
 
 ### Eclipse ###
 .metadata
