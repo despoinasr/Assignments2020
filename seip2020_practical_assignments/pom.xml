@@ -8,5 +8,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>gradeshistogram</module>
+  	<module>unittessting</module>
   </modules>
 </project>
