@@ -4,14 +4,9 @@ branches:
     only:
     - development
     - master
-
-sudo: required
-
-before_install:
-    - sudo apt update
  
 install:
-    - sudo apt install maven -y
+    - skip
 
 script:
     - mvn clean package
