@@ -8,12 +8,12 @@ branhes:
     only:
     - development
     - master
-	
+
 sudo: required
 
 before install:
     - sudo apt update
-    
+ 
 install:
     - sudo apt install maven -y
     
