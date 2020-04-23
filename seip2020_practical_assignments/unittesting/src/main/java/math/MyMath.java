@@ -15,5 +15,19 @@ public class MyMath {
 				throw new IllegalArgumentException("n should be 0 > n > 12");
 		}
 	}
-
+	
+	public  boolean isPrime(int n) {
+		if (n >= 2) {
+			double div = n / 2;
+			 for (int i=2; i<=div; i++) {  
+				 if (n % i == 0) {   
+					 return false;
+				 }
+			 }
+		} else {
+			throw new IllegalArgumentException("n should be n >= 2");
+		}
+		return true;
+	}
+	
 }
