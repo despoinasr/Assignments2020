@@ -1,0 +1,32 @@
+language: java
+
+jdk:
+	- openjdk8
+	- oraclekdj8
+
+branhes:
+	only:
+	- development
+	- master
+	
+sudo: required
+
+before install:
+    - sudo apt update
+    
+install:
+    - sudo apt install maven -y
+    
+before script:
+    - cd Assignments2020
+    - ls -la
+
+script:
+    - mvn clean package
+    
+after_success:
+    - echo "Process terminated successfully"
+    
+
+    
+
