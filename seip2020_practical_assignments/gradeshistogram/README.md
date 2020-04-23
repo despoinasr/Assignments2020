@@ -26,7 +26,7 @@ With the command Run as...Maven install you will be able to build the project!
 In order to run the app:
 - Open a terminal
 - Go to the directory where the project is saved
-- un the command: java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt (or any other txt file with grades)
+- use the command: java -jar gradeshistogram/target/gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar grades.txt (or any other txt file with grades)
 
 A histogram will appear on screen!
 
