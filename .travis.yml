@@ -1,13 +1,13 @@
 language: java
 
-branhes:
+branches:
     only:
     - development
     - master
 
 sudo: required
 
-before install:
+before_install:
     - sudo apt update
  
 install:
