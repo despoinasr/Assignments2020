@@ -17,6 +17,16 @@ public class ArithmeticOperationsTest {
 		operations.divide(5,0);
 	}
 	
+	@Test(expected=ArithmeticException.class)
+	public void test_getdivide_bothzero() {
+		operations.divide(0,0);
+	}
+	
+	@Test
+	public void test_getdivide_zeronumerator() {
+		operations.divide(0,3);
+	}
+
 	@Test
 	public void test_getdivide_notzero() {
 		Assert.assertEquals(5, operations.divide(10,2), 0);

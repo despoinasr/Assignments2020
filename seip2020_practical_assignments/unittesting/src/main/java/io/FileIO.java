@@ -59,8 +59,6 @@ public class FileIO {
 	        Integer.parseInt(s); 
 	    } catch(NumberFormatException e) { 
 	        return false; 
-	    } catch(NullPointerException e) {
-	        return false;
 	    }
 	    return true;
 	}
