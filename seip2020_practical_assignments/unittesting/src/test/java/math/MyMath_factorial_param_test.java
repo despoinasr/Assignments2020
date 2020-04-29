@@ -13,7 +13,7 @@ import org.junit.runners.Parameterized.Parameters;
 import math.MyMath;
 
 @RunWith(Parameterized.class)
-public class MyMath_factorial_parameterized {
+public class MyMath_factorial_param_test {
 	
 	@Parameter (value = 0)
 	public int n;

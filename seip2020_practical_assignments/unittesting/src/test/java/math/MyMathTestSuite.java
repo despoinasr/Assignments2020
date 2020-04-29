@@ -6,7 +6,7 @@ import org.junit.runners.Suite;
 
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({MyMathTest.class, MyMath_factorial_parameterized.class})
+@Suite.SuiteClasses({MyMathTest.class, MyMath_factorial_param_test.class})
 public class MyMathTestSuite {
 	
 }
