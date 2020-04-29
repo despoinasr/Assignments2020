@@ -51,4 +51,9 @@ public class ArithmeticOperationsTest {
 		thrown.expect(IllegalArgumentException.class);
 		operations.multiply(max, 2);
 	}
+	
+	@Test
+	public void test_mulitply_zero_y() {
+		Assert.assertEquals(0, operations.multiply(5,0), 0);
+	}
 }
