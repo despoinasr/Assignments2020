@@ -36,7 +36,9 @@ public class FileIOTest {
 	
 	@Test
 	public void testReadFileContainsInvalidEntries() {
-		file.readFile("src/test/resources/invalidentries.txt");
+		int [] result = file.readFile("src/test/resources/invalidentries.txt");
+		int [] expected = new int[] {2, 3, 5};
+		Assert.assertArrayEquals(expected, result);
 
 	}
 	

@@ -1,8 +1,8 @@
 package math;
 
-import java.io.IOException;
 
 import io.FileIO;
+
 
 /**
 * The ArrayOpearations provides the implementation of the search of primes in a file
