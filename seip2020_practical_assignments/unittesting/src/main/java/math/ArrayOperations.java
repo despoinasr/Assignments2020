@@ -37,7 +37,7 @@ public class ArrayOperations {
 		int[] primeArray = new int[list.size()];
 		
 		for (int i = 0; i < list.size(); i++) {
-			array[i] = list.get(i);
+			primeArray[i] = list.get(i);
 		}
 		return primeArray;
 	}
