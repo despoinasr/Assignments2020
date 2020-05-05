@@ -1,0 +1,21 @@
+language: java
+
+branches:
+    only:
+    - development
+    - master
+ 
+install:
+    - skip
+
+before_script:
+    - cd seip2020_practical_assignments
+ 
+script:
+    - mvn clean package jacoco:report
+    
+after_success:
+    - echo "Process terminated successfully"
+    
+
+
