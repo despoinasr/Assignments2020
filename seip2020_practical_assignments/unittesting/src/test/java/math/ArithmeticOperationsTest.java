@@ -53,7 +53,13 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
+	public void test_multiply_zero_x() {
+		Assert.assertEquals(0, operations.multiply(0, 3), 0);
+	}
+	
+	@Test
 	public void test_mulitply_zero_y() {
 		Assert.assertEquals(0, operations.multiply(5,0), 0);
 	}
+	
 }
