@@ -1,4 +1,4 @@
-![alt text](uml.PNG)
+![alt text](sourcecodeanalyzer/uml.PNG)
 
 1. Build the executable Java application with: 
 	mvn package jacoco:report
