@@ -9,8 +9,6 @@ import java.util.List;
 
 public class LocalTypeReader implements SourceFileReader {
 	
-    private String type = "local";
-	
 	public LocalTypeReader() {
 	}
 
