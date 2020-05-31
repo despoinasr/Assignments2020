@@ -1,3 +1,5 @@
+![alt text](https://github.com/despoinasr/Assignments2020/blob/development/seip2020_practical_assignments/sourcecodeanalyzer/uml.PNG)
+
 1. Build the executable Java application with: 
 	mvn package jacoco:report
 
